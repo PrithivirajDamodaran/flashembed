@@ -9,7 +9,7 @@ Lightweight & Fast Python library to add low-footprint (all-MiniLM-* equivalent)
 The library is licensed under Apache 2.0 but the weights are licensed differently see below for details. Note: The below license & terms apply ONLY for miniMiracle series models. Use responsibly.
 
 <center>
-<img src="./images/terms.png">
+<img src="./images/terms.png" width=80%>
 </center>
 
 
