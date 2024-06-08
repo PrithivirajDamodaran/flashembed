@@ -27,9 +27,19 @@ pip install flashembed
 
 <h2> 📖 Usage </h2>  
 
+For Gated models login first
+
+```python
+huggingface-cli login
+```
+
 ```python
 from flashembed import Embedder
 from typing import List
+
+# Onetime Init and Load model.
+embedder = Embedder('prithivida/miniMiracle_hi_v1')
+
 
 passages = [
     'एक आदमी खाना खा रहा है।',
@@ -43,10 +53,7 @@ passages = [
     'एक चीता अपने शिकार के पीछे दौड़ रहा है।',
     'एक बड़ा डिनर है।'
 ]
-    
 
-# Onetime Init and Load model
-embedder = Embedder('prithivida/miniMiracle_hi_v1')
-
+# Get embeddings.
 embeddings = embedder.encode(passages) 
 
